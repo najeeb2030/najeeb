@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>زر اتصل بي</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            direction: rtl;
+        }
+        .call-float {
+            position: fixed;
+            bottom: 100px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .call-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            animation: pulse 1.5s infinite;
+            text-decoration: none;
+        }
+        .call-float img {
+            width: 30px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="call-float">
+    <a href="tel:0531012176">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="اتصل بي">
+    </a>
+</div>
+
+</body>
+</html>
